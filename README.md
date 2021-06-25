@@ -30,3 +30,4 @@ rapidfuzz
 ![Project image](demo/2.png)
 
 ![Project image](https://drive.google.com/file/d/1iEKanoiQjqVXu5Z23n4ksY0WGrvLQXWc/view)
+<a href="https://drive.google.com/uc?export=view&id=<FILEID>"><img src="https://drive.google.com/uc?export=view&id=1iEKanoiQjqVXu5Z23n4ksY0WGrvLQXWc" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
