@@ -1,4 +1,7 @@
 # Movie-recommendation-system
+
+
+
 A movie recommendation system using machine learning model and AJAX.
 
 Content Based Movie Recommender System recommends movies similar to the movie description.
@@ -23,9 +26,12 @@ rapidfuzz
 
 ## Demo
 
+
+
 #### 
 ![Project image](demo/front%20image.png)
 
 #### 
 ![Project image](demo/2.png)
-<a href="https://drive.google.com/uc?export=view&id=<FILEID>"><img src="https://drive.google.com/uc?export=view&id=1iEKanoiQjqVXu5Z23n4ksY0WGrvLQXWc" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+![Project image](https://drive.google.com/uc?export=view&id=1iEKanoiQjqVXu5Z23n4ksY0WGrvLQXWc)
+<!-- <a href="https://drive.google.com/uc?export=view&id=1iEKanoiQjqVXu5Z23n4ksY0WGrvLQXWc"><img src="https://drive.google.com/uc?export=view&id=1iEKanoiQjqVXu5Z23n4ksY0WGrvLQXWc" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" /> -->
