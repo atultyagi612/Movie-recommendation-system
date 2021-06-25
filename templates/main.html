@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie recommender</title>
+       <link rel="stylesheet" href="../Static/style.css">
+</head>
+<body>
+  <div class="navbar">
+
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <form onsubmit="sub(event)"  id="contact_form" class="contact-form contact-grid">
+          <input type="text" placeholder="Type to search..">
+        </form>
+        <div class="autocom-box">
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    
+  </div>
+
+
+      <div class="main_movie">
+        
+      </div>
+
+      <ul style="margin-top: 100px;" class="card-list">
+        <h1 style="text-align: center; font-size: 41px;">recommended movies</h1>
+        <br>
+
+        <li class="card">
+        <a class="card-image" onclick="senddata('Iron Man')" style="background-image: url(https://image.tmdb.org/t/p/w500/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Iron Man</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Iron Man 3')" style="background-image: url(https://image.tmdb.org/t/p/w500/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Iron Man 3</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Iron Man 2')" style="background-image: url(https://image.tmdb.org/t/p/w500/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Iron Man 2</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Guardians of the Galaxy')" style="background-image: url(https://image.tmdb.org/t/p/w500/iL8mukexAqEg0xK783rG561tdd8.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/iL8mukexAqEg0xK783rG561tdd8.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Guardians of the Galaxy</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Captain America: The Winter Soldier')" style="background-image: url(https://image.tmdb.org/t/p/w500/2tOgiY533JSFp7OrVlkeRJvsZpI.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/2tOgiY533JSFp7OrVlkeRJvsZpI.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Captain America: The Winter Soldier</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Captain America: Civil War')" style="background-image: url(https://image.tmdb.org/t/p/w500/2tOgiY533JSFp7OrVlkeRJvsZpI.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/2tOgiY533JSFp7OrVlkeRJvsZpI.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Captain America: Civil War</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('The Avengers')" style="background-image: url(https://image.tmdb.org/t/p/w500/5k6WG11oWrXipYD8BAkmMJU4Men.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/5k6WG11oWrXipYD8BAkmMJU4Men.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>The Avengers</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Captain America: The First Avenger')" style="background-image: url(https://image.tmdb.org/t/p/w500/2tOgiY533JSFp7OrVlkeRJvsZpI.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/2tOgiY533JSFp7OrVlkeRJvsZpI.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Captain America: The First Avenger</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Green Lantern')" style="background-image: url(https://image.tmdb.org/t/p/w500/8EZ3hY4zhSorcRt4WtoaydsG3Ts.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/8EZ3hY4zhSorcRt4WtoaydsG3Ts.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Green Lantern</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('The Core')" style="background-image: url(https://image.tmdb.org/t/p/w500/v2YxWPX2yKdo6arIAknJzKLxhZY.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/v2YxWPX2yKdo6arIAknJzKLxhZY.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>The Core</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('The Man from U.N.C.L.E.')" style="background-image: url(https://image.tmdb.org/t/p/w500/bu0LiPEWKHWViRoaFwlTAzZ8wyS.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/bu0LiPEWKHWViRoaFwlTAzZ8wyS.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>The Man from U.N.C.L.E.</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Ransom')" style="background-image: url(https://image.tmdb.org/t/p/w500/vb6JwkHIcKiVvYrUFzuZbN7nUqN.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/vb6JwkHIcKiVvYrUFzuZbN7nUqN.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Ransom</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Ant-Man')" style="background-image: url(https://image.tmdb.org/t/p/w500/s0Sl2YemtW2ZwhkrrKksbTUja1L.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/s0Sl2YemtW2ZwhkrrKksbTUja1L.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Ant-Man</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Cradle 2 the Grave')" style="background-image: url(https://image.tmdb.org/t/p/w500/aE7GmGs9SQGcl1mZ18jBmgil2Ql.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/aE7GmGs9SQGcl1mZ18jBmgil2Ql.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Cradle 2 the Grave</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('I Am Legend')" style="background-image: url(https://image.tmdb.org/t/p/w500/xHWB9SdYRFV3nw1O0iL6GTedQQY.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/xHWB9SdYRFV3nw1O0iL6GTedQQY.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>I Am Legend</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Rio 2')" style="background-image: url(https://image.tmdb.org/t/p/w500/AuaToCmX55xDycK4oFJEYMgcK0O.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/AuaToCmX55xDycK4oFJEYMgcK0O.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Rio 2</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Journey to the Center of the Earth')" style="background-image: url(https://image.tmdb.org/t/p/w500/rm6gnRcaf7rPLOIfqY28QVBO6AZ.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/rm6gnRcaf7rPLOIfqY28QVBO6AZ.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Journey to the Center of the Earth</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Men in Black II')" style="background-image: url(https://image.tmdb.org/t/p/w500/neo50PMS8QZhl4VdzXAF1Cz3sPz.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/neo50PMS8QZhl4VdzXAF1Cz3sPz.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Men in Black II</h2>
+        </a>
+        </li><li class="card">
+        <a class="card-image" onclick="senddata('Planet 51')" style="background-image: url(https://image.tmdb.org/t/p/w500/dZRstKaOYhsa2eBMfBH2m946CGD.jpg);">
+        <img src="https://image.tmdb.org/t/p/w500/dZRstKaOYhsa2eBMfBH2m946CGD.jpg" alt="Psychopomp">
+        </a>
+        <a class="card-description">
+        <h2>Planet 51</h2>
+        </a>
+        </li></ul>
+
+
+<script src="../Static/script.js"></script>
+</body>
+</html>
