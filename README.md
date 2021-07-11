@@ -12,7 +12,7 @@ Content Based Movie Recommender System recommends movies similar to the movie de
 
 #### Datasets [download from here](https://drive.google.com/file/d/1-CaWPZLtxoxKhmrMNAEaJMmC4X5_kED6/view?usp=sharing)
 
-unable to upload Machine learning model and datasets here because github doesn't allow us to upload files more than 25gb
+unable to upload Machine learning model and datasets here because github doesn't allow us to upload files more than 25mb
 
 ### Requirements
 ```
